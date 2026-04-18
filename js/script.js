@@ -62,7 +62,7 @@ const projectData = [
     tag: "SWE-206 Team Project",
     category: "ai",
     level: "advanced",
-    date: "2025-09-15",
+    date: "2025-01-15",
     visual: "project-visual-one",
     description:
       "A Blackboard-like platform integrated with AI to personalize learning, improve content delivery, and support more useful academic feedback loops.",
@@ -95,7 +95,7 @@ const projectData = [
     tag: "SWE-363 Individual Project",
     category: "web",
     level: "beginner",
-    date: "2025-03-05",
+    date: "2026-01-20",
     visual: "project-visual-four",
     description:
       "A personal portfolio website built with HTML, CSS, and JavaScript featuring tabbed navigation, theme persistence, and form validation.",
@@ -106,7 +106,7 @@ const projectData = [
     tag: "SWE-316 Team Project",
     category: "mobile",
     level: "advanced",
-    date: "2025-12-01",
+    date: "2025-8-28",
     visual: "project-visual-five",
     description:
       "A mobile-friendly campus navigation tool with interactive maps, building search, and real-time location tracking for KFUPM students.",
@@ -117,7 +117,7 @@ const projectData = [
     tag: "Personal Project",
     category: "web",
     level: "beginner",
-    date: "2025-01-15",
+    date: "2024-08-15",
     visual: "project-visual-six",
     description:
       "A simple web-based study planner that helps students organize their weekly schedules, set reminders, and track assignment deadlines.",
