@@ -207,7 +207,7 @@ function setVisitorName(name) {
 
 function clearVisitorName() {
   localStorage.removeItem("visitor-name");
-  localStorage.removeItem("visit-start-time");
+  sessionStorage.removeItem("visit-start-time");
 }
 
 function updateVisitorUI() {
@@ -228,12 +228,12 @@ function updateVisitorUI() {
 
 function startVisitTimer() {
   // Restore start time from localStorage or set a new one
-  const stored = localStorage.getItem("visit-start-time");
+  const stored = sessionStorage.getItem("visit-start-time");
   if (stored) {
     visitStartTime = parseInt(stored, 10);
   } else {
     visitStartTime = Date.now();
-    localStorage.setItem("visit-start-time", String(visitStartTime));
+    sessionStorage.setItem("visit-start-time", String(visitStartTime));
   }
   if (timerInterval) clearInterval(timerInterval);
   timerInterval = setInterval(updateTimerDisplay, 1000);
