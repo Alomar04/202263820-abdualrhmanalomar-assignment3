@@ -188,7 +188,7 @@ function toggleTheme() {
 // ============================================
 // Visitor State Management (login/logout simulation)
 // ============================================
-let visitStartTime = Date.now();
+let visitStartTime = null;
 let timerInterval = null;
 
 function getVisitorName() {
@@ -207,6 +207,7 @@ function setVisitorName(name) {
 
 function clearVisitorName() {
   localStorage.removeItem("visitor-name");
+  localStorage.removeItem("visit-start-time");
 }
 
 function updateVisitorUI() {
@@ -226,7 +227,14 @@ function updateVisitorUI() {
 }
 
 function startVisitTimer() {
-  visitStartTime = Date.now();
+  // Restore start time from localStorage or set a new one
+  const stored = localStorage.getItem("visit-start-time");
+  if (stored) {
+    visitStartTime = parseInt(stored, 10);
+  } else {
+    visitStartTime = Date.now();
+    localStorage.setItem("visit-start-time", String(visitStartTime));
+  }
   if (timerInterval) clearInterval(timerInterval);
   timerInterval = setInterval(updateTimerDisplay, 1000);
   updateTimerDisplay();
