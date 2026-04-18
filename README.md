@@ -63,7 +63,7 @@ This project is the third iteration of an interactive portfolio website for SWE-
 
 1. Download or clone the repository:
    ```bash
-   git clone https://github.com/abdualrhmanalomar/202263820-abdualrhmanalomar-assignment3.git
+   git clone https://github.com/Alomar04/202263820-abdualrhmanalomar-assignment3.git
    ```
 2. Open the project directory.
 3. Launch `index.html` in any modern web browser.
